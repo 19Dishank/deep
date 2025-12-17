@@ -1,0 +1,202 @@
+/* =========================
+   BASE
+========================= */
+.navbar {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  background: rgba(11,14,23,0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   BRAND
+========================= */
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* =========================
+   RIGHT SIDE FIX
+========================= */
+.navbar-right {
+  margin-left: auto; /* 🔥 THIS FIXES CENTERING */
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.nav-link,
+.resume-btn {
+  background: none;
+  border: none;
+  margin-top: 2px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link::after,
+.resume-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #667eea;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.resume-btn:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   RESUME DROPDOWN
+========================= */
+.resume-wrapper {
+  position: relative;
+}
+
+.arrow {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.resume-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.6rem);
+  background: #0f1220;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  min-width: 170px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.resume-dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.resume-dropdown a {
+  display: block;
+  padding: 0.8rem 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+.mobile-toggle {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-bottom: -8px;
+}
+
+/* HIDE MOBILE ICON BY DEFAULT */
+.mobile-only {
+  display: none;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  display: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background: rgba(15,18,32,0.98);
+    margin-top: 0.6rem;
+    border-radius: 16px;
+    overflow: hidden;
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-link {
+    padding: 1rem 1.4rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .mobile-submenu.open {
+    max-height: 200px;
+  }
+
+  .mobile-submenu a {
+    padding: 0.8rem 2rem;
+    display: block;
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+  }
+}

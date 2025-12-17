@@ -1,0 +1,142 @@
+/* =========================
+   FOOTER BASE
+========================= */
+.app-footer {
+    background: linear-gradient(180deg, #0b0b12, #07070c);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 3rem 2rem 1.4rem;
+    color: #ffffff;
+  }
+  
+  /* =========================
+     CONTAINER
+  ========================= */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  /* =========================
+     BRAND
+  ========================= */
+  .footer-brand h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .footer-brand p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* =========================
+     CENTER TEXT
+  ========================= */
+  .footer-center p {
+    max-width: 420px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  /* =========================
+     CONTACT ICONS
+  ========================= */
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9fb4ff;
+    font-size: 1.15rem;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    background: rgba(102, 126, 234, 0.25);
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+  
+  /* =========================
+     BOTTOM
+  ========================= */
+  .footer-bottom {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+  }
+  
+  /* =========================
+     TABLET & MOBILE
+  ========================= */
+  @media (max-width: 900px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .footer-links {
+      justify-content: center;
+    }
+  
+    .footer-center p {
+      margin: 0 auto;
+    }
+  }
+  
+  /* =========================
+     SMALL MOBILE (KEY FIX)
+  ========================= */
+  @media (max-width: 480px) {
+    .app-footer {
+      padding: 2rem 1.2rem 1rem;
+    }
+  
+    .footer-container {
+      gap: 1.5rem;
+    }
+  
+    .footer-brand h3 {
+      font-size: 1.2rem;
+    }
+  
+    .footer-brand p {
+      font-size: 0.8rem;
+    }
+  
+    .footer-center p {
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+  
+    .footer-links a {
+      width: 36px;
+      height: 36px;
+      font-size: 1.05rem;
+    }
+  
+    .footer-bottom {
+      margin-top: 1.8rem;
+      font-size: 0.75rem;
+    }
+  }
+  

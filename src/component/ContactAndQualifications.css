@@ -1,0 +1,175 @@
+/* =========================
+   SECTION BASE
+========================= */
+.contact-qualifications-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0b12, #0f1220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+/* =========================
+   LEFT — TIMELINE
+========================= */
+.timeline-block {
+  padding-left: 1rem;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(#667eea, transparent);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #667eea;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 0 6px rgba(102,126,234,0.2);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.3rem; /* ADD THIS */
+}
+
+.timeline-status {
+  margin-top: 0.2rem;   /* was bigger */
+  margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #9fb4ff;
+}
+
+.timeline-place {
+  margin-top: 0.3rem;   /* was ~0.8 */
+  margin-bottom: 0.2rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.timeline-time {
+  margin-top: 0.1rem;   /* was ~0.2–0.3 */
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* =========================
+   RIGHT — CONTACT
+========================= */
+.contact-block {
+  padding-left: 2rem;
+  padding-top: 0; /* ADD THIS */
+}
+
+.contact-subtitle {
+  max-width: 420px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 3rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+}
+
+.contact-icon-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: rgba(102,126,234,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  color: #667eea;
+}
+
+.contact-type {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.contact-value {
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .section-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .contact-block {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
