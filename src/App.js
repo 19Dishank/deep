@@ -17,13 +17,13 @@ function App() {
         <Navbar />
         <div className="landing-content">
           <HeroSection 
-            greeting=<TextType 
+            greeting={<TextType 
             text={["Hi, my name is", "And I'm a"]}
             typingSpeed={80}
             pauseDuration={2500}
             showCursor={true}
             cursorCharacter="|"
-          />
+          />}
             nameComponent={
               <TextType 
                 text={["Deep Patel", "Flutter Developer"]}

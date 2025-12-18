@@ -1,54 +1,51 @@
-.liquid-ether-container {
+.liquid-ether {
   position: relative;
   width: 100%;
-  max-width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-  box-sizing: border-box;
+
+  /* LIGHTER & SOFTER VERSION */
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(120, 140, 255, 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(180, 120, 255, 0.15),
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg,
+      #121528 0%,
+      #161b3a 55%,
+      #121528 100%
+    );
 }
 
-.liquid-ether-canvas {
+.liquid-ether canvas {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   z-index: 1;
 }
 
 .liquid-ether-content {
   position: relative;
   z-index: 2;
-  width: 100%;
-  max-width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  overflow-y: visible;
 }
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  .liquid-ether-container {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  
-  .liquid-ether-canvas {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  
+/* Mobile safety */
+@media (max-width: 768px) {
+  .liquid-ether,
   .liquid-ether-content {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    align-items: center;
-    justify-content: flex-start;
+    min-height: 100svh; /* mobile-safe viewport */
   }
 }
