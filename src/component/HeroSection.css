@@ -102,7 +102,7 @@
 }
 
 .hero-tagline {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 0.5rem 0;
@@ -202,7 +202,7 @@
   }
   
   .hero-tagline {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .hero-greeting {
@@ -238,7 +238,7 @@
   }
   
   .hero-tagline {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     padding: 0 0.5rem;
   }
@@ -295,7 +295,7 @@
   }
   
   .hero-tagline {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 0.25rem;
   }
   

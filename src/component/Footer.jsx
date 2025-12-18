@@ -11,14 +11,13 @@ const Footer = () => {
         {/* Brand */}
         <div className="footer-brand">
           <h3>Deep Patel</h3>
-          <p>Flutter Developer</p>
+          <p>PHP - Laravel Developer</p>
         </div>
 
         {/* Center Text */}
         <div className="footer-center">
           <p>
-            Crafting smooth, scalable, and user-friendly mobile applications
-            using Flutter.
+            Building secure, scalable, and efficient web applications with Laravel and modern backend practices.
           </p>
         </div>
 

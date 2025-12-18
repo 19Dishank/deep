@@ -12,6 +12,7 @@ import {
   SiCss3,
   SiFigma,
   SiPhp,
+  SiLaravel,
   SiGithub,
   SiMysql
 } from 'react-icons/si';
@@ -25,11 +26,11 @@ const SkillsSection = () => {
 
   // Skills data for a Flutter Developer with expertise levels
   const skills = [
-    // { name: 'Flutter', icon: SiFlutter, color: '#02569B', expertise: 85 },
+    { name: 'Laravel', icon: SiLaravel, color: '#02569B', expertise: 85 },
     // { name: 'Dart', icon: SiDart, color: '#0175C2', expertise: 80 },
     { name: 'C#', icon: DiDotnet, color: '#239120', expertise: 50 },
     { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', expertise: 45 },
-    { name: 'PHP', icon: SiPhp, color: '#FFCA28', expertise: 70 },
+    { name: 'PHP', icon: SiPhp, color: '#FFCA28', expertise: 85 },
     // { name: 'Github', icon: SiGithub, color: '#F05032', expertise: 75 },
     { name: 'MySQL', icon: SiMysql, color: '#3DDC84', expertise: 70 },
     // { name: 'iOS', icon: SiApple, color: '#000000', expertise: 65 },

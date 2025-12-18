@@ -20,21 +20,21 @@ function App() {
             greeting={<TextType 
             text={["Hi, my name is", "And I'm a"]}
             typingSpeed={80}
-            pauseDuration={2500}
+            pauseDuration={2300}
             showCursor={true}
             cursorCharacter="|"
           />}
             nameComponent={
               <TextType 
-                text={["Deep Patel", "Flutter Developer"]}
+                text={["Deep Patel", "Laravel Developer"]}
                 typingSpeed={100}
-                pauseDuration={2200}
+                pauseDuration={2100}
                 showCursor={true}
                 cursorCharacter="|"
               />
             }
-            tagline="I build elegant UI & fast apps for mobile"
-            description="I'm currently pursuing my MCA and learning to design and build clean, responsive user interfaces that feel fast and enjoyable to use."
+            tagline="I build secure and scalable backend systems using Laravel."
+            description="I’m currently pursuing my MCA and learning to design and build secure, scalable web applications using Laravel."
             photoSrc="/hero-photo1.jpeg"
             
           />
