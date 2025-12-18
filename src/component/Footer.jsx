@@ -1,5 +1,5 @@
 import React from "react";
-import { MdEmail, MdPhone , MdLinkedIn } from "react-icons/md";
+import { MdEmail, MdPhone, MdLinkedIn } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
 
@@ -49,8 +49,23 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Built by Dishank Patel. All rights reserved.
+        © {new Date().getFullYear()} Built by{" "}
+        <a
+          href="https://dishankpatel.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "inherit",
+            textDecoration: "underline",
+            textUnderlineOffset: "3px",
+            cursor: "pointer"
+          }}
+        >
+          Dishank Patel
+        </a>
+        . All rights reserved.
       </div>
+
     </footer>
   );
 };
